@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: coral;
+    min-height: 2000px;
+    width: 100%;
+}
+/* THE NAVIGATION BAR */
+.nav{
+    background-color: coral;
+    height: 50px;
+}
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    padding-top: 12px;
+    padding-left: 7px;
+    
+    
+}
+.nav li{
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 15px;
+    font-size: 20px;
+    
+}
+.nav li a:link, 
+.nav li a:visited{
+    
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 8px;
+    font-size: 20px;
+    
+}
+.nav li a:hover, 
+.nav li a:active{
+    border: 2px solid rgba(160, 27, 27, 0.98);
+    background-color: antiquewhite;
+    color: red;
+    border-radius: 10%;
+    margin-left: 10px;
+}
+
+
+/* THE DROP DOWN */
+.drop{
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+}
+.nav ul li:hover .drop{
+display: block;
+position: absolute;
+background-color: coral;
+margin-top: 15px;
+margin-left: 15px;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+ z-index: 1;
+
+}
+.nav ul li:hover .drop ul{
+    display: block;
+    margin: 10px;
+}
+.nav ul li:hover .drop ul li{
+    width: 200px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    margin-right: 5px;
+}
+.nav ul li:hover .drop ul li a{
+    margin-right: 5px;
+}
+
+
+
+/* THE HEADIN */
+.one{
+    height: 600px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.7)),  url(./img/3.jfif);
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: all 30s linear infinite;
+    
+}
+/* @keyframes all{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-300px);
+    }
+} */
+
+.one h1,h2{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 220px;
+    color:white;
+    /* border: 2px dotted black; */
+    /* border-width: 20px; */
+}
+h2{
+    padding-top: 30px;
+}
+button{
+border: 2px solid dotted;
+height: 40px;
+width: 15%;
+margin-left: 560px;
+margin-top: 20px;
+background-color: coral;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+/* SECTION TWO */
+
+.two{
+    /* border: 2px solid black; */
+    height: 500px;
+    margin-top: 30px;
+}
+.write p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.picture{
+    width: 70%;
+    height: 300px;
+    margin: 40px auto;
+    animation: pic 15s infinite;
+
+}
+@keyframes pic{
+10%{
+    background: url(./img/3.jfif);
+}
+20%{
+    background: url(./img/2.jfif);
+}
+30%{
+    background: url(./img/8.jfif)
+}
+40%{
+    background: url(./img/3.jfif);
+}
+50%{
+    background: url(./img/p2.jfif)
+}
+60%{
+    background: url(./img/p4.jfif);
+}
+70%{
+    background: url(./img/p6.jfif);
+}
+80%{
+    background: url(./img/p4.jfif);
+}
+90%{
+    background: url(./img/2.jfif);
+}
+100%{
+    background: url(./img/10.jfif);
+}
+}
+
+
+/* HOW IT FUNCTIONS */
+.works{
+    margin-top: 30px;
+}
+.pit{
+    display: flex;
+    flex-direction: row;
+    margin-left: 230px;
+}
+.pit .img{
+    /* border: 2px solid black; */
+    margin: 60px 100px;
+    border-radius: 50%;
+    height: 270px;
+    width: 270px;
+ 
+}
+.img img{
+    object-fit: contain;
+    width: 100%;
+    border-radius: 50%;
+}
+.text{
+    margin-top: 60px ;
+}
+.steps{
+    display: flex;
+    flex-direction: row;
+}
+.steps div{
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    margin:20px  15px;
+    padding-top: 15px;
+}
+.steps p{
+    line-height: 20px;
+    margin-top: 10px;
+    margin: 30px 15px;
+    font-weight: 700; 
+    
+}
+
+
+
+
+
+

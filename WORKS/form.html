@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+  <div class="container">
+      <form action="" method="">
+         <div>
+           <h1 style="text-align: center; margin-top: 5px;">REGISTER BELOW</h1>
+         </div>
+         <div>
+           <div class="row">
+            <label for="">First Name</label>
+            <input type="text" placeholder="enter your furst name">
+           </div>
+           <div class="row">
+            <label for="">Last Name</label>
+            <input type="text" placeholder="enter your surnmae">
+           </div>
+           <div class="row">
+             <label for="email">Email</label>
+              <input type="email" placeholder="enter your email">
+           </div>
+           <div class="row">
+             <label for="number">Phone Number</label>
+             <input  max="11" min="5" type="number" placeholder="enter your phone number">
+           </div>
+           <div class="row">
+             <label for="country">Choose your country</label>
+             <select name="country" id="country">
+               <option value="">select country</option>
+               <option value="Japan">Japan</option>
+               <option value="India">India</option>
+               <option value="America">America</option>
+               <option value="Russia">Russia</option>
+               <option value="Ukraine">Ukraine</option>
+               <option value="Nigeria">Nigeria</option>
+               <option value="China">China</option>
+               <option value="Korea">Korea</option>
+               <option value="Philipine">Philipine</option>
+               <option value="Pakistan">Pakistan</option>
+               <option value="Zimbabbuwe">Zimbabbuwe</option>
+               <option value="South Africa">South Africa</option>
+             </select>
+           </div>
+           <div class="rowl">
+            <label  for="gender">Enter your gender</label> <br>
+            <input type="radio" name="checkbox">Male <br>
+            <input type="radio" name="checkbox">Female
+          </div>
+           <div class="row">
+            <label for="date_of_birth">date of birth</label>
+            <input type="date" id="date_of_birth" placeholder="Enter date of birth">
+           </div>
+           <div class="row">
+            <label for="bio">Bio</label>
+            <textarea maxlength="10" id="bio" placeholder="Tell us about yourself?"></textarea>
+           </div>
+           <div class="rowl">
+              <input type="checkbox" name="checkbox" id="check" checked />Agree to our terms?
+           </div>
+          
+           <div class="row">
+             <button>Click to submit</button>
+           </div>
+        <button style="height: 50px; width: 190px; margin-left: 20px; margin-top: 20px; background-color: black;"> <a href="./home.html">click to go back to home</a> </button>
+        <button style="height: 50px; width: 190px; margin-left: 200px; margin-top: 20px; background-color: black;"><a href="">forgot password?</a> </button>   
+      </div> 
+      </form>
+  </div>  
+</body>
+</html>
